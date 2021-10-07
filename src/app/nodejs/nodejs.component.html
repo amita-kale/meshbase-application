@@ -1,0 +1,25 @@
+<div class="card mt-3">
+  <!-- header section -->
+  <div class="card-header text-center">
+    <!-- previous button -->
+    <button type="button" class="btn btn-primary float-start" [routerLink]="['/javascript']">Prev</button>
+    <!-- title of page -->
+    <b>{{title|uppercase}}</b>
+
+    <!-- next button -->
+    <button type="button" class="btn btn-primary float-end" [routerLink]="['/angular']">Next</button>
+  </div>
+  <div class="card-body">
+    <div class="text-center">
+      <!-- image -->
+      <img src="assets/nodejs-img.png" class="rounded h-25 w-25" alt="Angular Test Image">
+    </div>
+    <!-- details of this page -->
+    <h5 class="card-title">{{componentDetails.label | titlecase}}</h5>
+    <div class="row card-text">
+      <div class="col">
+        {{componentDetails.content}}
+      </div>
+    </div>
+  </div>
+</div>
